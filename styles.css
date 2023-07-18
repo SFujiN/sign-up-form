@@ -1,7 +1,15 @@
+ul {
+  list-style: none;
+}
+
 .container {
   display: flex;
 }
 
-ul {
-  list-style: none;
+.title-box {
+  flex: 1 1 0;
+}
+
+.form-box {
+  flex: 2 1 0;
 }
