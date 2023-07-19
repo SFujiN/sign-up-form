@@ -1,15 +1,85 @@
 ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 120px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.outer-container > div {
+  flex: 1;
 }
 
 .container {
   display: flex;
 }
 
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .title-box {
+  background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
   flex: 1 1 0;
+  text-align: center;
+}
+
+.title-box > h1 {
+  background-color: #000000;
+  color: white;
+  opacity: 0.6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-box > h1::before {
+  background-image: url("images/odin-lined.png");
+  // background-size: 380px 508px;
+  background-size: calc(380px/6) calc(508px/6);
+  display: inline-block;
+  // width: 380px;
+  width: calc(380px/6);
+  // height: 508px;
+  height: calc(508px/6);
+  content: "";
 }
 
 .form-box {
   flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
 }
+
+.form-box > div {
+  flex: 1;
+}
+
+.form-box .form {
+  background-color: #ffffff;
+}
+
